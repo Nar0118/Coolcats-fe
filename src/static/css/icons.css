@@ -1,0 +1,168 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "CoolCatsAlphabet";
+  src: url("../fonts/CoolCatsAlphabet.eot?g5un6d");
+  src: url("../fonts/CoolCatsAlphabet.eot?g5un6d#iefix") format("embedded-opentype"), url("../fonts/CoolCatsAlphabet.ttf?g5un6d") format("truetype"), url("../fonts/CoolCatsAlphabet.woff?g5un6d") format("woff"), url("../fonts/CoolCatsAlphabet.svg?g5un6d#CoolCatsAlphabet") format("svg");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+[class^=cc-], [class*=" cc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: "CoolCatsAlphabet" !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cc-icons_arcade:before {
+  content: "";
+}
+
+.cc-icons_banner-builder:before {
+  content: "";
+}
+
+.cc-icons_chain:before {
+  content: "";
+}
+
+.cc-icons_discord:before {
+  content: "";
+}
+
+.cc-icons_gallery:before {
+  content: "";
+}
+
+.cc-icons_medium:before {
+  content: "";
+}
+
+.cc-icons_opensea:before {
+  content: "";
+}
+
+.cc-icons_shop:before {
+  content: "";
+}
+
+.cc-icons_twitter:before {
+  content: "";
+}
+
+.cc-icons_youtube:before {
+  content: "";
+}
+
+.cc-A:before {
+  content: "a";
+}
+
+.cc-B:before {
+  content: "b";
+}
+
+.cc-C:before {
+  content: "c";
+}
+
+.cc-D:before {
+  content: "d";
+}
+
+.cc-E:before {
+  content: "e";
+}
+
+.cc-F:before {
+  content: "f";
+}
+
+.cc-G:before {
+  content: "g";
+}
+
+.cc-H:before {
+  content: "h";
+}
+
+.cc-I:before {
+  content: "i";
+}
+
+.cc-J:before {
+  content: "j";
+}
+
+.cc-K:before {
+  content: "k";
+}
+
+.cc-L:before {
+  content: "l";
+}
+
+.cc-M:before {
+  content: "m";
+}
+
+.cc-N:before {
+  content: "n";
+}
+
+.cc-O:before {
+  content: "o";
+}
+
+.cc-P:before {
+  content: "p";
+}
+
+.cc-Q:before {
+  content: "q";
+}
+
+.cc-R:before {
+  content: "r";
+}
+
+.cc-S:before {
+  content: "s";
+}
+
+.cc-T:before {
+  content: "t";
+}
+
+.cc-U:before {
+  content: "u";
+}
+
+.cc-V:before {
+  content: "v";
+}
+
+.cc-W:before {
+  content: "w";
+}
+
+.cc-X:before {
+  content: "x";
+}
+
+.cc-Y:before {
+  content: "y";
+}
+
+.cc-Z:before {
+  content: "z";
+}
+
+/*# sourceMappingURL=icons.css.map */

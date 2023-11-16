@@ -1,0 +1,83 @@
+
+CC-CREATURE-SAMPLE.png
+size: 2048, 2048
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+BACK ARM
+  rotate: false
+  xy: 1684, 1673
+  size: 333, 375
+  orig: 333, 375
+  offset: 0, 0
+  index: -1
+Layer 836
+  rotate: 270
+  xy: 1427, 800
+  size: 305, 353
+  orig: 305, 353
+  offset: 0, 0
+  index: -1
+body
+  rotate: false
+  xy: 2, 818
+  size: 1062, 1230
+  orig: 1062, 1230
+  offset: 0, 0
+  index: -1
+body1
+  rotate: false
+  xy: 1480, 1065
+  size: 566, 429
+  orig: 566, 429
+  offset: 0, 0
+  index: -1
+eyeL
+  rotate: false
+  xy: 2, 1937
+  size: 119, 111
+  orig: 119, 111
+  offset: 0, 0
+  index: -1
+eyeR
+  rotate: false
+  xy: 1269, 1930
+  size: 130, 118
+  orig: 130, 118
+  offset: 0, 0
+  index: -1
+footL
+  rotate: 180
+  xy: 1034, 792
+  size: 317, 256
+  orig: 317, 256
+  offset: 0, 0
+  index: -1
+footR
+  rotate: true
+  xy: 1025, 1733
+  size: 315, 262
+  orig: 315, 262
+  offset: 0, 0
+  index: -1
+hat2
+  rotate: false
+  xy: 1009, 1275
+  size: 708, 773
+  orig: 708, 773
+  offset: 0, 0
+  index: -1
+mouth
+  rotate: false
+  xy: 1696, 1590
+  size: 120, 135
+  orig: 120, 135
+  offset: 0, 0
+  index: -1
+tail
+  rotate: false
+  xy: 1086, 1012
+  size: 424, 279
+  orig: 424, 279
+  offset: 0, 0
+  index: -1

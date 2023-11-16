@@ -1,0 +1,3 @@
+<BlogPost title="Hello world!" author_name="catscontent" author_url="https://catscontent.wpengine.com" author_description="" author_avatar="https://secure.gravatar.com/avatar/84e077adf2410566382ce92f3922be71?s=96&d=mm&r=g">![](https://content.coolcatsnft.com/wp-content/uploads/2022/04/egg.acd97ab0.png)
+
+Welcome to WordPress. This is your first post. Edit or delete it, then start writing!</BlogPost>

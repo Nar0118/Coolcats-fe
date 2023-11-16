@@ -1,0 +1,366 @@
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role='list'],
+ol[role='list'] {
+    list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+    scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+    min-height: 100vh;
+    text-rendering: optimizeSpeed;
+    line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+    text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+    html:focus-within {
+        scroll-behavior: auto;
+    }
+
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    background-color: #F0F0F0;
+}
+
+canvas {
+    margin-left: 5px;
+    border: none !important;
+}
+
+input[type='checkbox'] {
+    margin-left: 5px;
+}
+
+.canvas-row {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.row {
+    display: flex;
+    width: 1200px;
+    margin-top: 25px;
+    padding-top: 25px;
+}
+
+.canvas-column {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 10px 10px 10px;
+}
+
+.left {
+    display: flex;
+    width: 1200px;
+    flex: 0 0 auto;
+}
+
+.right {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 2 1 auto;
+}
+
+.column {
+    flex: 33%;
+}
+
+label {
+    display: flex;
+    padding-bottom: 3px;
+    padding-top: 3px;
+    align-items: center;
+    margin-top: 3px;
+    margin-bottom: 3px;
+}
+
+.sp-palette-container {
+    background: grey;
+}
+.sp-replacer {
+    margin-left: 5px;
+}
+
+#images-outer {
+    display: flex;
+    flex-flow: row wrap;
+    flex: 2 1 auto;
+
+    padding-left: 1em;
+}
+
+.images {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-start;
+    overflow: auto;
+    width: 275px;
+    height: 400px;
+    flex: 2 1 auto;
+    align-items: flex-start;
+    align-content: flex-start;
+
+    border-right: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-top: 1px solid #000000;
+}
+
+.controls span {
+    padding-right: 5px;
+}
+
+#images img {
+    max-width: 64px;
+    /*max-height: 64px;*/
+    align-items: center;
+}
+
+#owned-cats img {
+    max-width: 64px;
+    /*max-height: 64px;*/
+    align-items: center;
+}
+
+#bgs img {
+    max-height: 96px;
+    /*max-height: 64px;*/
+    align-items: center;
+}
+
+#layering {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#layering button {
+    line-height: 1;
+    padding: 4px 4px 4px 4px;
+    margin: 4px 2px 4px 2px;
+
+    transition-duration: 0.4s;
+    background-color: #33A3C8;
+    color: black;
+    border: 2px solid #008CBA;
+}
+
+#layering button:hover {
+    background-color: #008CBA;
+    color: white;
+}
+
+#grouping button {
+    line-height: 1;
+    padding: 8px 4px 8px 4px;
+    margin: 4px 2px 4px 2px;
+
+    transition-duration: 0.4s;
+    background-color: #A155E8;
+    color: black;
+    border: 2px solid #8A2BE2;
+}
+
+#grouping button:hover {
+    background-color: #8A2BE2;
+    color: white;
+}
+
+#flipping button {
+    line-height: 1;
+    padding: 8px 4px 8px 4px;
+    margin: 4px 2px 4px 2px;
+
+    transition-duration: 0.4s;
+    background-color: #fad121;
+    color: black;
+    border: 2px solid #B49617;
+}
+
+#flipping button:hover {
+    background-color: #B49617;
+    color: white;
+}
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+}
+
+.toggle-lighting {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.toggle-lighting input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+.dark-mode-body {
+    background-color: #121212;
+}
+
+.dark-mode-font {
+    color: #FFFFFF;
+}
+
+.dark-mode-primary {
+    background-color: #3700B3;
+}
+
+#download {
+    background-color: #fad121;
+}
+
+#clear {
+    color: white;
+    background-color: red;
+}
+
+.object-control {
+    width: 15%;
+}
+
+.iconbutton {
+    border: none;
+    padding: 6px 12px; /* Some padding */
+    font-size: 16px; /* Set a font size */
+    cursor: pointer; /* Mouse pointer on hover */
+    transform-origin: center;
+    background-color: #39e27d;
+    color: #000000;
+    position: relative;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    img {
+        display: inline-block;
+    }
+    &:hover {
+        transform: scale(1.1);
+        box-shadow: 0 0 5px rgba(0,0,0,0.8);
+        z-index: 2;
+    }
+    &#download {
+        padding: 9px 12px;
+        font-family: 'Poppins', sans-serif;
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        img {
+            margin-right: 0px;
+            margin-left: 5px;
+        }
+    }
+}

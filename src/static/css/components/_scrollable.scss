@@ -1,0 +1,8 @@
+.scrollable {
+  overflow-y: auto;
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  max-height: 100%;
+  justify-content: flex-start;
+}

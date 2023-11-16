@@ -1,0 +1,17 @@
+.default-page--cat-showcase {
+	.cool-cat-block {
+		width: 250px;
+		margin-right: 2rem;
+	}
+}
+
+.cat-showcase_container {
+	display: flex;
+
+	main {
+		h3 {
+			margin: 0;
+			margin-bottom: 2rem;
+		}
+	}
+}

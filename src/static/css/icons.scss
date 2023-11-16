@@ -1,0 +1,135 @@
+@font-face {
+  font-family: 'CoolCatsAlphabet';
+  src:  url('../fonts/CoolCatsAlphabet.eot?g5un6d');
+  src:  url('../fonts/CoolCatsAlphabet.eot?g5un6d#iefix') format('embedded-opentype'),
+  url('../fonts/CoolCatsAlphabet.ttf?g5un6d') format('truetype'),
+  url('../fonts/CoolCatsAlphabet.woff?g5un6d') format('woff'),
+  url('../fonts/CoolCatsAlphabet.svg?g5un6d#CoolCatsAlphabet') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="cc-"], [class*=" cc-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'CoolCatsAlphabet' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.cc-icons_arcade:before {
+  content: "\e900";
+}
+.cc-icons_banner-builder:before {
+  content: "\e901";
+}
+.cc-icons_chain:before {
+  content: "\e902";
+}
+.cc-icons_discord:before {
+  content: "\e903";
+}
+.cc-icons_gallery:before {
+  content: "\e904";
+}
+.cc-icons_medium:before {
+  content: "\e905";
+}
+.cc-icons_opensea:before {
+  content: "\e906";
+}
+.cc-icons_shop:before {
+  content: "\e907";
+}
+.cc-icons_twitter:before {
+  content: "\e908";
+}
+.cc-icons_youtube:before {
+  content: "\e909";
+}
+.cc-A:before {
+  content: "\61";
+}
+.cc-B:before {
+  content: "\62";
+}
+.cc-C:before {
+  content: "\63";
+}
+.cc-D:before {
+  content: "\64";
+}
+.cc-E:before {
+  content: "\65";
+}
+.cc-F:before {
+  content: "\66";
+}
+.cc-G:before {
+  content: "\67";
+}
+.cc-H:before {
+  content: "\68";
+}
+.cc-I:before {
+  content: "\69";
+}
+.cc-J:before {
+  content: "\6a";
+}
+.cc-K:before {
+  content: "\6b";
+}
+.cc-L:before {
+  content: "\6c";
+}
+.cc-M:before {
+  content: "\6d";
+}
+.cc-N:before {
+  content: "\6e";
+}
+.cc-O:before {
+  content: "\6f";
+}
+.cc-P:before {
+  content: "\70";
+}
+.cc-Q:before {
+  content: "\71";
+}
+.cc-R:before {
+  content: "\72";
+}
+.cc-S:before {
+  content: "\73";
+}
+.cc-T:before {
+  content: "\74";
+}
+.cc-U:before {
+  content: "\75";
+}
+.cc-V:before {
+  content: "\76";
+}
+.cc-W:before {
+  content: "\77";
+}
+.cc-X:before {
+  content: "\78";
+}
+.cc-Y:before {
+  content: "\79";
+}
+.cc-Z:before {
+  content: "\7a";
+}

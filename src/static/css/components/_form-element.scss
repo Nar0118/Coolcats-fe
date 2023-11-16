@@ -1,0 +1,121 @@
+@import '../variables';
+
+.form-element {
+	width: 100%;
+
+	label {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 6px;
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+    color: #4d4d4d;
+
+		& + p {
+			padding: 3px;
+		}
+
+    &[for] {
+      cursor: pointer;
+    }
+	}
+
+	select,
+	input[type=text],
+	input[type=email],
+	textarea {
+		width: 100%;
+	}
+
+	select,
+	input[type=text],
+	input[type=email],
+	textarea {
+    font-size: 20px;
+    color: #000000;
+    border: solid 4px #000000;
+    border-radius: 6px;
+    padding: 6px 6px;
+    font-weight: bold;
+    font-family: "Poppins", sans-serif;
+    margin-right: 20px;
+    text-transform: uppercase;
+  }
+
+	input[type=radio],
+	input[type=checkbox] {
+    -webkit-appearance: none;
+    background-color: #ffffff;
+    border: 4px solid #000000;
+    padding: 9px;
+    border-radius: 3px;
+    display: inline-block;
+    position: relative;
+    &:hover {
+      cursor: pointer;
+    }
+
+    &:checked {
+      border: 4px solid #000000;
+      color: #99a1a7;
+      &:after {
+        content: '\2714';
+        font-size: 24px;
+        position: absolute;
+        top: -8px;
+        left: -1px;
+        color: #006613;
+        font-weight: bold;
+      }
+    }
+  }
+
+	&--checkbox,
+  &--radio {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+  }
+}
+
+.form[disabled],
+.form-element[disabled]
+.form-element--disabled {
+  input[type=text],
+  input[type=email],
+  input[type=number],
+  input[type=radio],
+  input[type=checkbox],
+  input[type=password],
+  input[type=submit],
+  button[type=submit],
+  select,
+  textarea {
+    cursor: not-allowed !important;
+    background-color: map-get($site-colors, disabled) !important;
+  }
+}
+
+.form-fieldsets {
+	display: flex;
+	margin-bottom: 1rem;
+
+	.form-fieldset {
+		width: 50%;
+		padding-right: 1rem;
+	}
+}
+
+.form-fieldset {
+	margin: 0;
+	padding: 0;
+	border: 0 none;
+}
+
+.form .actions {
+	display: flex;
+	justify-content: space-around;
+  margin-top: 1rem;
+}

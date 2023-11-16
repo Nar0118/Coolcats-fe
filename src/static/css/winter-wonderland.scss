@@ -1,0 +1,193 @@
+.winter-wonderland {
+  /** Start of Seasonal Colouring - WINTER **/
+  .wrapper {
+    .dashboard-bar {
+      background-color: #ED1515;
+    }
+  }
+  .mega-menu {
+    border-color: #2E762C;
+    ul {
+      li {
+        &.heading {
+          background-color: #60AF5D;
+          border-color: #2E762C;
+        }
+        a {
+          .img {
+            color: #2E762C;
+          }
+        }
+      }
+    }
+  }
+  .footer {
+    background-color: #ED1515;
+  }
+  .cool-tablet {
+    border-color: #2E762C;
+    .cool-tablet-screen {
+      .cool-tablet__top_nav {
+        background-color: #60AF5D;
+      }
+      .views-container {
+        .detailed-view {
+          border-color: #2E762C;
+        }
+      }
+    }
+  }
+  /** End of Seasonal Colouring **/
+
+  .default-page--winter-wonderland {
+    background-color: #D85858;
+    color: #ED1515;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    background-image: url("./../images/WinterWonderland00.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 100%;
+    min-height: 940px;
+    padding-top: 0px;
+    @media screen and (max-width: 996px) {
+      padding-top: 93px;
+    }
+    h1 {
+      margin-top: 0px;
+      margin-bottom: 30px;
+      text-shadow: 0px 2px 0px rgba(0,0,0,0.8);
+    }
+    p {
+      text-align: center;
+      font-weight: bold;
+      // text-shadow: 0px 1px 0px rgba(0,0,0,0.8);
+      font-size: 16px;
+      a {
+        color: #ED1515;
+        &:hover {
+          color: #1b761e;
+        }
+      }
+    }
+    .calendar {
+      display: flex;
+      flex-flow: row wrap;
+      align-items: center;
+      justify-content: center;
+      max-width: 1020px;
+      padding: 0px 0px 50px 0px;
+      .day {
+        width: 120px;
+        height: 120px;
+        background-color: rgba(27,118,30,0.4);
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        margin: 7px;
+        border-radius: 10px;
+        border: dashed 5px rgba(27,118,30,0.8);
+        cursor: pointer;
+        font-size: 60px;
+        font-weight:  bold;
+        font-family: 'Poppins', sans-serif;
+        position: relative;
+        overflow: hidden;
+        .content {
+          display: none;
+          &:hover, &:focus {
+            &:before {
+              content: "🔍";
+              color: rgba(27,118,30,1);
+              position: absolute;
+              top: 0px;
+              left: 0px;
+              display: flex;
+              flex-flow: row nowrap;
+              align-items: center;
+              justify-content: center;
+              background-color: rgba(255,255,255,0.8);
+              width: 100%;
+              height: 100%;
+              font-size: 60px;
+              text-shadow: 2px 3px 0px rgb(0, 0, 0, 0.3);
+            }
+          }
+        }
+        &:hover, &:focus {
+          background-color: rgba(27,118,30,1);
+          border: dashed 5px rgba(255,255,255,1);
+        }
+        &.unlocked {
+          border: solid 5px #ED1515;
+          .door {
+            display: none;
+          }
+          .content {
+            display: block;
+          }
+        }
+        &.locked {
+          background-color: rgba(255,255,255,0.4);
+          border: dashed 5px rgba(255,0,0,0.6);
+          &:hover, &:focus {
+            background-color: rgba(255,255,255,0.6);
+            border: dashed 5px rgba(255,0,0, 1);
+          }
+          .door {
+            display: none;
+          }
+          &:after {
+            display: block;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            background-image: url("./../images/icons/lock.svg");
+            content: "";
+            background-repeat: no-repeat;
+            background-position: 50% 50%;
+            background-size: 60px;
+          }
+        }
+        &.opened {
+
+        }
+      }
+    }
+  }
+  .image-overlay {
+    .image {
+      max-width: 500px;
+      width: 80%;
+      height: auto;
+      position: relative;
+      .close {
+        position: absolute;
+        top: 12px;
+        right: 13px;
+        width: 40px;
+        height: 40px;
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+      }
+      img {
+        width: 100%;
+        height: auto;
+      }
+      .puzzle-day {
+        background-color: rgba(27,118,30,1);
+        color: #ffffff;
+        font-size: 26px;
+        padding: 16px 20px;
+        border-radius: 0px 0px 20px 20px;
+        text-transform: uppercase;
+      }
+    }
+  }
+}

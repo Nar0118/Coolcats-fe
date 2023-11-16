@@ -1,0 +1,131 @@
+.winter-wonderland {
+  /** Start of Seasonal Colouring - WINTER **/
+  /** End of Seasonal Colouring **/
+}
+.winter-wonderland .wrapper .dashboard-bar {
+  background-color: #ED1515;
+}
+.winter-wonderland .mega-menu {
+  border-color: #2E762C;
+}
+.winter-wonderland .mega-menu ul li.heading {
+  background-color: #60AF5D;
+  border-color: #2E762C;
+}
+.winter-wonderland .mega-menu ul li a .img {
+  color: #2E762C;
+}
+.winter-wonderland .footer {
+  background-color: #ED1515;
+}
+.winter-wonderland .cool-tablet {
+  border-color: #2E762C;
+}
+.winter-wonderland .cool-tablet .cool-tablet-screen .cool-tablet__top_nav {
+  background-color: #60AF5D;
+}
+.winter-wonderland .cool-tablet .cool-tablet-screen .views-container .detailed-view {
+  border-color: #2E762C;
+}
+.winter-wonderland .default-page--winter-wonderland {
+  background-color: #D85858;
+  color: #ffffff;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.winter-wonderland .default-page--winter-wonderland h1 {
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.winter-wonderland .default-page--winter-wonderland p {
+  text-align: center;
+}
+.winter-wonderland .default-page--winter-wonderland p a {
+  color: #ffffff;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+  max-width: 1020px;
+  padding: 0px 0px 50px 0px;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day {
+  width: 120px;
+  height: 120px;
+  background-color: rgba(27, 118, 30, 0.4);
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+  border-radius: 10px;
+  border: dashed 5px rgba(27, 118, 30, 0.8);
+  cursor: pointer;
+  font-size: 60px;
+  font-weight: bold;
+  font-family: "Poppins", sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day .content {
+  display: none;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day .content:hover:before, .winter-wonderland .default-page--winter-wonderland .calendar .day .content:focus:before {
+  content: "?";
+  color: #1b761e;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 100%;
+  height: 100%;
+  font-size: 80px;
+  text-shadow: 2px 3px 0px rgba(0, 0, 0, 0.3);
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day:hover, .winter-wonderland .default-page--winter-wonderland .calendar .day:focus {
+  background-color: #1b761e;
+  border: dashed 5px white;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.unlocked {
+  border: solid 5px rgba(27, 118, 30, 0.8);
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.unlocked .door {
+  display: none;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.unlocked .content {
+  display: block;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.locked {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: dashed 5px rgba(255, 255, 255, 0.4);
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.locked:hover, .winter-wonderland .default-page--winter-wonderland .calendar .day.locked:focus {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: dashed 5px rgba(255, 255, 255, 0.4);
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.locked .door {
+  display: none;
+}
+.winter-wonderland .default-page--winter-wonderland .calendar .day.locked:after {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-image: url("./../images/icons/lock.svg");
+  content: "";
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-size: 60px;
+}
+
+/*# sourceMappingURL=winter-wonderland.css.map */

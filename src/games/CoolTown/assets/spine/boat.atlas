@@ -1,0 +1,20 @@
+
+boat.png
+size: 128, 128
+format: RGBA8888
+filter: Linear, Linear
+repeat: none
+Boat
+  rotate: false
+  xy: 2, 38
+  size: 59, 39
+  orig: 59, 39
+  offset: 0, 0
+  index: -1
+Ripple
+  rotate: false
+  xy: 2, 4
+  size: 64, 32
+  orig: 64, 32
+  offset: 0, 0
+  index: -1

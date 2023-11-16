@@ -1,0 +1,61 @@
+@import '../variables';
+
+.button[disabled],
+.button.disabled,
+.button-disabled,
+button[disabled] {
+	cursor: not-allowed !important;
+	background-color: map-get($site-colors, disabled) !important;
+}
+
+.button.buy-item,
+.button-purchase,
+.button-listed {
+  border: none;
+  color: map-get($site-colors, buttonText);
+  font-size: 24px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  &:hover {
+    font-size: 26px;
+  }
+}
+
+.button.buy-item,
+.button-purchase {
+  width: calc(100% - 290px);
+  text-transform: uppercase;
+  &:not([disabled]) {
+    background-color: map-get($site-colors, purchase);
+    cursor: pointer;
+  }
+}
+
+.button-listed {
+  width: 290px;
+  cursor: pointer;
+  &:not([disabled]) {
+    background-color: map-get($site-colors, listed);
+    cursor: pointer;
+  }
+}
+
+.buttons {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+
+  .button {
+    width: 100%;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 1024px) {
+      margin-right: 1rem;
+      width: auto;
+      margin-bottom: 0;
+      &:last-of-type {
+        margin-right: 0;
+      }
+    }
+  }
+}
